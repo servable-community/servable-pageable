@@ -1,0 +1,385 @@
+[
+    {
+        "className": "PageMap",
+        "fields": {
+            "objectId": {
+                "type": "String"
+            },
+            "createdAt": {
+                "type": "Date"
+            },
+            "updatedAt": {
+                "type": "Date"
+            },
+            "ACL": {
+                "type": "ACL"
+            },
+            "name": {
+                "type": "String"
+            },
+            "model": {
+                "type": "Pointer",
+                "targetClass": "PageMapModel"
+            },
+            "modelType": {
+                "type": "String"
+            },
+            "customData": {
+                "type": "Object"
+            },
+            "generatedData": {
+                "type": "Object"
+            },
+            "description": {
+                "type": "String"
+            },
+            "thumbnail": {
+                "type": "File"
+            },
+            "target": {
+                "type": "Array"
+            },
+            "pages": {
+                "type": "Array"
+            }
+        },
+        "classLevelPermissions": {
+            "find": {
+                "*": true
+            },
+            "count": {
+                "*": true
+            },
+            "get": {
+                "*": true
+            },
+            "create": {},
+            "update": {},
+            "delete": {},
+            "addField": {},
+            "protectedFields": {
+                "*": []
+            }
+        },
+        "indexes": {
+            "_id_": {
+                "_id": 1
+            }
+        }
+    },
+    {
+        "className": "PageMapModel",
+        "fields": {
+            "objectId": {
+                "type": "String"
+            },
+            "createdAt": {
+                "type": "Date"
+            },
+            "updatedAt": {
+                "type": "Date"
+            },
+            "ACL": {
+                "type": "ACL"
+            },
+            "name": {
+                "type": "String"
+            },
+            "type": {
+                "type": "String"
+            },
+            "data": {
+                "type": "Object"
+            },
+            "instances": {
+                "type": "Relation",
+                "targetClass": "PageMap"
+            },
+            "description": {
+                "type": "String"
+            }
+        },
+        "classLevelPermissions": {
+            "find": {
+                "*": true
+            },
+            "count": {
+                "*": true
+            },
+            "get": {
+                "*": true
+            },
+            "create": {},
+            "update": {},
+            "delete": {},
+            "addField": {},
+            "protectedFields": {
+                "*": []
+            }
+        },
+        "indexes": {
+            "_id_": {
+                "_id": 1
+            }
+        }
+    },
+    {
+        "className": "PageModel",
+        "fields": {
+            "objectId": {
+                "type": "String"
+            },
+            "createdAt": {
+                "type": "Date"
+            },
+            "updatedAt": {
+                "type": "Date"
+            },
+            "ACL": {
+                "type": "ACL"
+            },
+            "name": {
+                "type": "String"
+            },
+            "type": {
+                "type": "String"
+            },
+            "data": {
+                "type": "Object"
+            },
+            "instances": {
+                "type": "Relation",
+                "targetClass": "Page"
+            },
+            "description": {
+                "type": "String"
+            }
+        },
+        "classLevelPermissions": {
+            "find": {
+                "*": true
+            },
+            "count": {
+                "*": true
+            },
+            "get": {
+                "*": true
+            },
+            "create": {},
+            "update": {},
+            "delete": {},
+            "addField": {},
+            "protectedFields": {
+                "*": []
+            }
+        },
+        "indexes": {
+            "_id_": {
+                "_id": 1
+            }
+        }
+    },
+    {
+        "className": "Page",
+        "fields": {
+            "objectId": {
+                "type": "String"
+            },
+            "createdAt": {
+                "type": "Date"
+            },
+            "updatedAt": {
+                "type": "Date"
+            },
+            "ACL": {
+                "type": "ACL"
+            },
+            "name": {
+                "type": "String"
+            },
+            "path": {
+                "type": "String"
+            },
+            "type": {
+                "type": "String"
+            },
+            "target": {
+                "type": "Array"
+            },
+            "files": {
+                "type": "Array"
+            },
+            "assets": {
+                "type": "Array"
+            },
+            "data": {
+                "type": "Object"
+            },
+            "model": {
+                "type": "Pointer",
+                "targetClass": "PageModel"
+            },
+            "pageMap": {
+                "type": "Pointer",
+                "targetClass": "PageMap"
+            },
+            "modelType": {
+                "type": "String"
+            },
+            "customData": {
+                "type": "Object"
+            },
+            "description": {
+                "type": "String"
+            },
+            "thumbnail": {
+                "type": "File"
+            }
+        },
+        "classLevelPermissions": {
+            "find": {
+                "*": true
+            },
+            "count": {
+                "*": true
+            },
+            "get": {
+                "*": true
+            },
+            "create": {
+                "*": true
+            },
+            "update": {
+                "*": true
+            },
+            "delete": {},
+            "addField": {},
+            "protectedFields": {
+                "*": []
+            }
+        },
+        "indexes": {
+            "_id_": {
+                "_id": 1
+            }
+        }
+    },
+    {
+        "className": "PageAsset",
+        "fields": {
+            "objectId": {
+                "type": "String"
+            },
+            "createdAt": {
+                "type": "Date"
+            },
+            "updatedAt": {
+                "type": "Date"
+            },
+            "ACL": {
+                "type": "ACL"
+            },
+            "type": {
+                "type": "String"
+            },
+            "assetClassName": {
+                "type": "String"
+            },
+            "file": {
+                "type": "File"
+            },
+            "description": {
+                "type": "String"
+            },
+            "status": {
+                "type": "String"
+            },
+            "assetId": {
+                "type": "String"
+            },
+            "lastUsedAt": {
+                "type": "Date"
+            }
+        },
+        "classLevelPermissions": {
+            "find": {
+                "*": true
+            },
+            "count": {
+                "*": true
+            },
+            "get": {
+                "*": true
+            },
+            "create": {
+                "*": true
+            },
+            "update": {
+                "*": true
+            },
+            "delete": {},
+            "addField": {},
+            "protectedFields": {
+                "*": []
+            }
+        },
+        "indexes": {
+            "_id_": {
+                "_id": 1
+            }
+        }
+    },
+    {
+        "className": "PageTestfor",
+        "fields": {
+            "objectId": {
+                "type": "String"
+            },
+            "createdAt": {
+                "type": "Date"
+            },
+            "updatedAt": {
+                "type": "Date"
+            },
+            "ACL": {
+                "type": "ACL"
+            },
+            "type": {
+                "type": "String"
+            },
+            "typeA": {
+                "type": "String"
+            },
+            "typeB": {
+                "type": "Number"
+            }
+        },
+        "classLevelPermissions": {
+            "find": {
+                "*": true
+            },
+            "count": {
+                "*": true
+            },
+            "get": {
+                "*": true
+            },
+            "create": {
+                "*": true
+            },
+            "update": {
+                "*": true
+            },
+            "delete": {},
+            "addField": {},
+            "protectedFields": {
+                "*": []
+            }
+        },
+        "indexes": {
+            "_id_": {
+                "_id": 1
+            }
+        }
+    }
+]

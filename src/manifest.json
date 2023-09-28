@@ -1,0 +1,9 @@
+{
+    "type": "protocol",
+    "id": "pageable",
+    "types": [
+        "appable",
+        "classable"
+    ],
+    "version": "1.0.1"
+}

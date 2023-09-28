@@ -1,0 +1,15 @@
+{
+    "pageableItems": {
+        "type": "Array"
+    },
+    "pageableStatus": {
+        "type": "Object"
+    },
+    "pageableMap": {
+        "type": "Pointer",
+        "targetClass": "PageMap"
+    },
+    "pageableMapGeneratedData": {
+        "type": "Object"
+    }
+}
