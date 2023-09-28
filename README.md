@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-The pageable protocol handles the complete publication state of an object.
+The pageable protocol handles the complete lifecycle for pageable objects, from storing the models to saving the custom implementation on instianted objects.
 
 ## Install
 ```bash
