@@ -1,6 +1,6 @@
-import { Page as BaseClass } from '@yelounak/pageable-parse-classes'
+import { classes } from '@yelounak/pageable-classes'
 
-export default class Page extends BaseClass {
+export default class Page extends classes.Page {
 
     /* #region searchable */
     searchableFields = () => ['name']

@@ -1,6 +1,6 @@
-import { PageAsset as BaseClass } from '@yelounak/pageable-parse-classes'
+import { classes } from '@yelounak/pageable-classes'
 
-export default class PageAsset extends BaseClass {
+export default class PageAsset extends classes.PageAsset {
 
     /* #region disposablechildrenable */
     disposableChildren = () => ([

@@ -68,8 +68,9 @@
     }
   ],
   "peerDependencies": {
-    "parse": ">= 3.0.0",
-    "underscore": ">= 1.0.0"
+    "servable-engine": "*",
+    "underscore": ">= 1.0.0",
+    "servable-pageable-shared": "*"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.2",

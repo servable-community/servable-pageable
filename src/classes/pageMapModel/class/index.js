@@ -1,6 +1,6 @@
-import { PageMapModel as BaseClass } from '@yelounak/pageable-parse-classes'
+import { classes } from '@yelounak/pageable-classes'
 
-export default class PageMapModel extends BaseClass {
+export default class PageMapModel extends classes.PageMapModel {
 
 
     /* #region disposablechildrenable */
